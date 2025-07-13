@@ -1,12 +1,14 @@
 // import { useState } from 'react'
 import './App.css'
 import Profile from './profile.jsx'
+
 function App() {
-  // const [count, setCount] = useState(0)
+  let username = "johndoe";
+  let email = "johndoe@example.com";
 
   return (
     <>
-      <Profile />
+      <Profile username={username} email={email} />
       Recipies App
     </>
   )
