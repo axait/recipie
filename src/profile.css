@@ -1,0 +1,59 @@
+.profilebag {
+    border: 1px solid #000000;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #DBEFD0;
+    color: black;
+    width: 230px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.text-info-profile {
+    font-size: 14px;
+    color: #000;
+    text-align: left;
+}
+
+.profilebag h1 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.profilebag p {
+    font-size: 16px;
+    margin: 4px 0;
+}
+
+.expanded {
+    width: 230px;
+    display: block;
+}
+
+@media screen and (max-width: 10000px) {
+    .profilebag {
+        margin: 20px 0;
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    .text-info-profile {
+        font-size: 12px;
+        display: none;
+    }
+
+    .profilebag h1 {
+        font-size: 20px;
+    }
+
+    .profilebag p {
+        font-size: 14px;
+    }
+
+
+}
