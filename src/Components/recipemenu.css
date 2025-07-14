@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Libertinus+Mono&display=swap');
+
+.recipemenu-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    border: 2px solid red;
+    border-bottom: 5px solid red;
+    border-radius: 20px;
+    background-color: #FFF6DE;
+    color: black;
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.ccmenu {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    padding-bottom: 2px;
+    width: 100%;
+    margin-top: 0px;
+    background-color: rgba(75, 75, 75, 0.103);
+}
+
+.ccmenu h3 {
+    margin: 5px;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.ccmenu h3:hover {
+    margin: 5px;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: bolder;
+    font-style: normal;
+    animation-name: jello;
+    animation-duration: 1s;
+}
+
+#editbtn {
+    width: 100%;
+    text-align: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#editbtn button {
+    background: transparent;
+    color: black;
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#editbtn button:hover {
+    border: 1px solid transparent;
+    animation-name: rubberBand;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.selectionMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.selectionMenu div {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.select-recipe-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90px;
+}
+.select-recipe-menu #recipe-name{
+    width: 200px;
+    height: 60px;
+    margin-bottom: 20px;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: large;
+    text-align: center;
+    background: white;
+    color: black;
+    display: flex;
+
+    
+}
+
+.recipe-amount-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.recipe-amount-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.recipe-amount-btns input,
+.recipe-amount-btns button {
+    width: 50px;
+    height: 40px;
+    font-size: large;
+    display: inline-block;
+    text-align: center;
+    background: white;
+    color: black;
+    border: 1px solid transparent;
+    -moz-appearance: textfield;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.recipe-amount-btns {
+    padding-left: 35px;
+}
+
+
+.recipe-amount-btns button:hover,
+.recipe-amount-btns button:focus {
+    transform: scale(1.2, 1.2);
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.select-recipe-menu label,
+.recipe-amount-div label {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    position: relative;
+    top: -10px;
+    left: -40px;
+}
+.select-recipe-menu label {
+    left: -60px;
+}
