@@ -25,7 +25,7 @@ $menus-bg-color: #FFF6DE;
         height: 1rem;
         text-align: center;
         font-size: 1rem;
-        -moz-appearance: textfield;
+        appearance: textfield;
     }
 }
 
@@ -42,12 +42,13 @@ $menus-bg-color: #FFF6DE;
 
 .ingredients__list ul {
     list-style-type: none;
-    height: 505px;
+    height: calc(100vh - 380px);
     width: calc(100% - 20px);
     transform: translateY(-10px);
     padding: 0;
     margin: 10px auto;
     overflow-y: scroll;
+    background-color: transparent;
 
     li {
         padding: 0.5rem 0 0.2rem 0;
@@ -66,15 +67,13 @@ $menus-bg-color: #FFF6DE;
 
             label {
                 position: relative;
-                left: -180px;
-                // transform: translateX(-50px);
-                // transform: translateX(-50px);
+                transform: translateX(-70px);
+                font-family: 'Courier New', Courier, monospace;
             }
 
             .ingredients-amount-input {
-                position: absolute;
-                right: 18px;
-                top: 24px;
+                position: relative;
+                left: 100px;
                 margin: 0;
                 padding-bottom: 0;
                 height: 30px;
@@ -93,8 +92,17 @@ $menus-bg-color: #FFF6DE;
             text-align: left;
         }
 
-        &:hover .description{
-        display: block;
-    }
+    //     &:hover .description{
+    //     display: block;
+    // }
 }
+}
+
+
+// classes to hide or show the elements
+.hiddeen {
+    display: none !important;
+}
+.show {
+    display: block !important;
 }
