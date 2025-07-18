@@ -26,7 +26,7 @@ const IngredientsMenu = ({ data }) => {
           <div className='ingredients-name_and_amount' >
             <label htmlFor={ingredient.name}>{ingredient.name}</label>
             <div className="ingredients-amount-input">
-              <AmountInput initialAmount={ingredient.amount} />
+              <AmountInput initialAmount={ingredient.amount} onClick={() => {}} />
             </div>
 
           </div>
