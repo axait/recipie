@@ -21,7 +21,6 @@ const IngredientsMenu = () => {
 
           {/* From here a list starts */}
           {dummyData.map((ingredient) => (
-            { console.log(ingredient.id) }
             <li key={ingredient.id} onClick={() => handleAccordionClick(ingredient.id)}>
           <div className='ingredients-name_and_amount' >
             <label htmlFor={ingredient.name}>{ingredient.name}</label>
@@ -33,7 +32,7 @@ const IngredientsMenu = () => {
           <p className={`description ${activeAccordion === ingredient.id ? 'show' : 'hidden'}`}>
             {ingredient.description}
           </p>
-        </>
+        </li>
         )
         )
         }
