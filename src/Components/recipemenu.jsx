@@ -39,7 +39,7 @@ const RecipeMenu = () => {
         </div>
 
         <div className="recipe-amount-div">
-          <label for="language">Recipe:</label>
+          <label for="language">Net Weight:</label>
           <div className="recipe-amount-btns">
             <button onClick={() => changeValue(-1)}>−</button>
             <input type="number" id="recipe-amount-number" defaultValue="0" min="0" />
