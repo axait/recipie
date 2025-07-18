@@ -5,6 +5,7 @@ import RecipeMenu from './Components/recipemenu.jsx'
 import IngredientsMenu from './Components/ingredientsmenu.jsx'
 import 'animate.css';
 import './styles/main.scss';
+import {dummyData} from './Components/dummydata.jsx'; // Assuming you have a dummyData.jsx file with the data
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <div>
         <Profile username={username} email={email} />
         <RecipeMenu />
-        <IngredientsMenu />
+        <IngredientsMenu data={dummyData} />
       </div>
     </div>
   )

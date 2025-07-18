@@ -3,7 +3,8 @@ import AmountInput from './input/amouninput.jsx';
 import { useState } from 'react';
 import { dummyData } from './dummydata.jsx';
 
-const IngredientsMenu = () => {
+const IngredientsMenu = ({ data }) => {
+  console.log(data)
   // State to manage the active accordion
   const [activeAccordion, setActiveAccordion] = useState(null);
 
@@ -25,7 +26,7 @@ const IngredientsMenu = () => {
           <div className='ingredients-name_and_amount' >
             <label htmlFor={ingredient.name}>{ingredient.name}</label>
             <div className="ingredients-amount-input">
-              <AmountInput />
+              <AmountInput initialAmount={ingredient.amount} />
             </div>
 
           </div>
